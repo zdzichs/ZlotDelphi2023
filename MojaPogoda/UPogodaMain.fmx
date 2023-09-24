@@ -1,0 +1,429 @@
+object FPogodaMain: TFPogodaMain
+  Left = 0
+  Top = 0
+  Caption = 'Moja Pogoda'
+  ClientHeight = 480
+  ClientWidth = 374
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControlMain: TTabControl
+    Align = Client
+    Size.Width = 374.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = None
+    Sizes = (
+      374s
+      480s
+      374s
+      480s)
+    object TabItemForecast: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItemForecast'
+      ExplicitSize.cx = 107.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ListViewForecast: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 374.000000000000000000
+        Size.Height = 391.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        CanSwipeDelete = False
+        OnItemClickEx = ListViewForecastItemClickEx
+      end
+      object ToolBar2: TToolBar
+        Size.Width = 374.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label1: TLabel
+          Align = Contents
+          Size.Width = 374.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Moja pogoda'
+          TabOrder = 0
+        end
+      end
+      object EditSearch: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 0
+        Position.X = 5.000000000000000000
+        Position.Y = 49.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 364.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        OnChangeTracking = EditSearchChangeTracking
+        object ButtonClearEditSearch: TButton
+          Align = Right
+          Position.X = 342.000000000000000000
+          Size.Width = 22.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'cleareditbutton'
+          TabOrder = 0
+          Text = 'ButtonClearEditSearch'
+          OnClick = ButtonClearEditSearchClick
+        end
+        object ButtonSearch: TButton
+          Align = Left
+          HitTest = False
+          Opacity = 0.699999988079071000
+          Size.Width = 22.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'searcheditbutton'
+          TabOrder = 1
+          Text = 'ButtonClearEditSearch'
+        end
+      end
+    end
+    object TabItemResults: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItemResults'
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ListBoxDetails: TListBox
+        Align = Client
+        Size.Width = 374.000000000000000000
+        Size.Height = 436.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        OnItemClick = ListBoxDetailsItemClick
+        Viewport.Width = 370.000000000000000000
+        Viewport.Height = 432.000000000000000000
+        object ListBoxItemTemp: TListBoxItem
+          Size.Width = 370.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Temperatura:'
+          object LabelTemp: TLabel
+            Align = Right
+            AutoSize = True
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 360.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 0.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+          end
+        end
+        object ListBoxItemCisn: TListBoxItem
+          Position.Y = 44.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Ci'#347'nienie'
+          object LabelCisn: TLabel
+            Align = Right
+            AutoSize = True
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 360.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 0.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+          end
+        end
+        object ListBoxItemTmin: TListBoxItem
+          Position.Y = 88.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Temp. min'
+          object LabelTmin: TLabel
+            Align = Right
+            AutoSize = True
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 360.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 0.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+          end
+        end
+        object ListBoxItemTmax: TListBoxItem
+          Position.Y = 132.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Temp. max'
+          object LabelTmax: TLabel
+            Align = Right
+            AutoSize = True
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 360.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 0.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+          end
+        end
+        object ListBoxItemWilg: TListBoxItem
+          Position.Y = 176.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Wilgotno'#347#263
+          object LabelWilg: TLabel
+            Align = Right
+            AutoSize = True
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 360.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 0.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+          end
+        end
+      end
+      object ToolBar1: TToolBar
+        Size.Width = 374.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object LabelDetails: TLabel
+          Align = Contents
+          Size.Width = 374.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Szczeg'#243#322'y'
+          TabOrder = 1
+        end
+        object ButtonWroc: TButton
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 84.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 0
+          OnClick = ButtonWrocClick
+        end
+      end
+    end
+  end
+  object TimerTyping: TTimer
+    Enabled = False
+    OnTimer = TimerTypingTimer
+    Left = 272
+    Top = 424
+  end
+  object AniIndicator1: TAniIndicator
+    Align = Contents
+    Size.Width = 374.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'http://api.openweathermap.org'
+    Params = <>
+    SynchronizedEvents = False
+    Left = 32
+    Top = 80
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <
+      item
+        Kind = pkURLSEGMENT
+        Name = 'q'
+        Value = 'Gliwice'
+      end>
+    Resource = 
+      'data/2.5/forecast?q={q}&units=metric&APPID=KLUCZ_API'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 32
+    Top = 144
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 32
+    Top = 200
+  end
+  object RESTResponseDataSetAdapterForecast: TRESTResponseDataSetAdapter
+    AutoUpdate = False
+    Dataset = FDMemTableForecast
+    FieldDefs = <>
+    Response = RESTResponse1
+    RootElement = 'list'
+    Left = 168
+    Top = 120
+  end
+  object FDMemTableForecast: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvPersistent, rvSilentMode]
+    ResourceOptions.Persistent = True
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 296
+    Top = 88
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTableForecast
+    ScopeMappings = <>
+    Left = 136
+    Top = 192
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListViewForecast
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'dt_txt'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'pressure'
+      Component = LabelCisn
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'humidity'
+      Component = LabelWilg
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'temp_min'
+      Component = LabelTmin
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText4: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'temp_max'
+      Component = LabelTmax
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText5: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'temp'
+      Component = LabelTemp
+      ComponentProperty = 'Text'
+    end
+  end
+  object FDMemTableDetails: TFDMemTable
+    FieldDefs = <>
+    IndexDefs = <>
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvUpdateChngFields, uvUpdateMode, uvLockMode, uvLockPoint, uvLockWait, uvRefreshMode, uvFetchGeneratorsPoint, uvCheckRequired, uvCheckReadOnly, uvCheckUpdatable, uvAutoCommitUpdates]
+    UpdateOptions.LockWait = True
+    UpdateOptions.FetchGeneratorsPoint = gpNone
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    StoreDefs = True
+    Left = 296
+    Top = 216
+  end
+  object RESTResponseDataSetAdapterDetails: TRESTResponseDataSetAdapter
+    AutoUpdate = False
+    Dataset = FDMemTableDetails
+    FieldDefs = <>
+    Response = RESTResponse1
+    RootElement = 'list[0].main'
+    Left = 296
+    Top = 160
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = FDMemTableDetails
+    ScopeMappings = <>
+    Left = 160
+    Top = 272
+  end
+  object ActionList1: TActionList
+    Left = 240
+    Top = 338
+    object NextTabActionDetails: TNextTabAction
+      Category = 'Tab'
+      TabControl = TabControlMain
+    end
+    object PreviousTabActionDetails: TPreviousTabAction
+      Category = 'Tab'
+      TabControl = TabControlMain
+    end
+  end
+end

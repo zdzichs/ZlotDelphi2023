@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B32F12E02AA7422500850E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F12DF2AA7422500850E8B /* AppDelegate.swift */; };
+		B32F12E22AA7422500850E8B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F12E12AA7422500850E8B /* SceneDelegate.swift */; };
+		B32F12E42AA7422500850E8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F12E32AA7422500850E8B /* ViewController.swift */; };
+		B32F12E72AA7422500850E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32F12E52AA7422500850E8B /* Main.storyboard */; };
+		B32F12EA2AA7422500850E8B /* Shopaholic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B32F12E82AA7422500850E8B /* Shopaholic.xcdatamodeld */; };
+		B32F12EC2AA7422700850E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32F12EB2AA7422700850E8B /* Assets.xcassets */; };
+		B32F12EF2AA7422700850E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32F12ED2AA7422700850E8B /* LaunchScreen.storyboard */; };
+		B3A448E52AAE5D2100FF7ADE /* ViewControllerAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A448E42AAE5D2100FF7ADE /* ViewControllerAdd.swift */; };
+		B3B8F6462AA74B7D00618509 /* ItemToBuy+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8F6442AA74B7D00618509 /* ItemToBuy+CoreDataClass.swift */; };
+		B3B8F6472AA74B7D00618509 /* ItemToBuy+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B8F6452AA74B7D00618509 /* ItemToBuy+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B32F12DC2AA7422500850E8B /* Shopaholic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopaholic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B32F12DF2AA7422500850E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B32F12E12AA7422500850E8B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B32F12E32AA7422500850E8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B32F12E62AA7422500850E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B32F12E92AA7422500850E8B /* Shopaholic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shopaholic.xcdatamodel; sourceTree = "<group>"; };
+		B32F12EB2AA7422700850E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B32F12EE2AA7422700850E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B32F12F02AA7422700850E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3A448E42AAE5D2100FF7ADE /* ViewControllerAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAdd.swift; sourceTree = "<group>"; };
+		B3B8F6442AA74B7D00618509 /* ItemToBuy+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemToBuy+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B3B8F6452AA74B7D00618509 /* ItemToBuy+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ItemToBuy+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B32F12D92AA7422500850E8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B32F12D32AA7422500850E8B = {
+			isa = PBXGroup;
+			children = (
+				B32F12DE2AA7422500850E8B /* Shopaholic */,
+				B32F12DD2AA7422500850E8B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B32F12DD2AA7422500850E8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B32F12DC2AA7422500850E8B /* Shopaholic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B32F12DE2AA7422500850E8B /* Shopaholic */ = {
+			isa = PBXGroup;
+			children = (
+				B3B8F6442AA74B7D00618509 /* ItemToBuy+CoreDataClass.swift */,
+				B3B8F6452AA74B7D00618509 /* ItemToBuy+CoreDataProperties.swift */,
+				B32F12DF2AA7422500850E8B /* AppDelegate.swift */,
+				B32F12E12AA7422500850E8B /* SceneDelegate.swift */,
+				B3A448E42AAE5D2100FF7ADE /* ViewControllerAdd.swift */,
+				B32F12E32AA7422500850E8B /* ViewController.swift */,
+				B32F12E52AA7422500850E8B /* Main.storyboard */,
+				B32F12EB2AA7422700850E8B /* Assets.xcassets */,
+				B32F12ED2AA7422700850E8B /* LaunchScreen.storyboard */,
+				B32F12F02AA7422700850E8B /* Info.plist */,
+				B32F12E82AA7422500850E8B /* Shopaholic.xcdatamodeld */,
+			);
+			path = Shopaholic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B32F12DB2AA7422500850E8B /* Shopaholic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B32F12F32AA7422700850E8B /* Build configuration list for PBXNativeTarget "Shopaholic" */;
+			buildPhases = (
+				B32F12D82AA7422500850E8B /* Sources */,
+				B32F12D92AA7422500850E8B /* Frameworks */,
+				B32F12DA2AA7422500850E8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shopaholic;
+			productName = Shopaholic;
+			productReference = B32F12DC2AA7422500850E8B /* Shopaholic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B32F12D42AA7422500850E8B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					B32F12DB2AA7422500850E8B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = B32F12D72AA7422500850E8B /* Build configuration list for PBXProject "Shopaholic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B32F12D32AA7422500850E8B;
+			productRefGroup = B32F12DD2AA7422500850E8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B32F12DB2AA7422500850E8B /* Shopaholic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B32F12DA2AA7422500850E8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32F12EF2AA7422700850E8B /* LaunchScreen.storyboard in Resources */,
+				B32F12EC2AA7422700850E8B /* Assets.xcassets in Resources */,
+				B32F12E72AA7422500850E8B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B32F12D82AA7422500850E8B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B8F6472AA74B7D00618509 /* ItemToBuy+CoreDataProperties.swift in Sources */,
+				B32F12E42AA7422500850E8B /* ViewController.swift in Sources */,
+				B3B8F6462AA74B7D00618509 /* ItemToBuy+CoreDataClass.swift in Sources */,
+				B3A448E52AAE5D2100FF7ADE /* ViewControllerAdd.swift in Sources */,
+				B32F12EA2AA7422500850E8B /* Shopaholic.xcdatamodeld in Sources */,
+				B32F12E02AA7422500850E8B /* AppDelegate.swift in Sources */,
+				B32F12E22AA7422500850E8B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B32F12E52AA7422500850E8B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B32F12E62AA7422500850E8B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B32F12ED2AA7422700850E8B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B32F12EE2AA7422700850E8B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B32F12F12AA7422700850E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B32F12F22AA7422700850E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B32F12F42AA7422700850E8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X25623S35T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Shopaholic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caprisoft.Shopaholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B32F12F52AA7422700850E8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X25623S35T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Shopaholic/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.caprisoft.Shopaholic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B32F12D72AA7422500850E8B /* Build configuration list for PBXProject "Shopaholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32F12F12AA7422700850E8B /* Debug */,
+				B32F12F22AA7422700850E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B32F12F32AA7422700850E8B /* Build configuration list for PBXNativeTarget "Shopaholic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B32F12F42AA7422700850E8B /* Debug */,
+				B32F12F52AA7422700850E8B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B32F12E82AA7422500850E8B /* Shopaholic.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B32F12E92AA7422500850E8B /* Shopaholic.xcdatamodel */,
+			);
+			currentVersion = B32F12E92AA7422500850E8B /* Shopaholic.xcdatamodel */;
+			path = Shopaholic.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B32F12D42AA7422500850E8B /* Project object */;
+}

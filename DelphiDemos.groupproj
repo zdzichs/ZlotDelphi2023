@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{7759D5BE-04C4-4545-8D2C-19DC8A227C8A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MojaPogoda\MojaPogoda.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Zakupoholik\Zakupoholik.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="OptCzasMob\OptCzasMob.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MojaPogoda">
+        <MSBuild Projects="MojaPogoda\MojaPogoda.dproj"/>
+    </Target>
+    <Target Name="MojaPogoda:Clean">
+        <MSBuild Projects="MojaPogoda\MojaPogoda.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MojaPogoda:Make">
+        <MSBuild Projects="MojaPogoda\MojaPogoda.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Zakupoholik">
+        <MSBuild Projects="Zakupoholik\Zakupoholik.dproj"/>
+    </Target>
+    <Target Name="Zakupoholik:Clean">
+        <MSBuild Projects="Zakupoholik\Zakupoholik.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Zakupoholik:Make">
+        <MSBuild Projects="Zakupoholik\Zakupoholik.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="OptCzasMob">
+        <MSBuild Projects="OptCzasMob\OptCzasMob.dproj"/>
+    </Target>
+    <Target Name="OptCzasMob:Clean">
+        <MSBuild Projects="OptCzasMob\OptCzasMob.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="OptCzasMob:Make">
+        <MSBuild Projects="OptCzasMob\OptCzasMob.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MojaPogoda;Zakupoholik;OptCzasMob"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MojaPogoda:Clean;Zakupoholik:Clean;OptCzasMob:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MojaPogoda:Make;Zakupoholik:Make;OptCzasMob:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

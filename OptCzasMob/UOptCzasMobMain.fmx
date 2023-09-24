@@ -1,0 +1,177 @@
+object FOptCzasMobMain: TFOptCzasMobMain
+  Left = 0
+  Top = 0
+  Caption = 'OptCzasMob'
+  ClientHeight = 480
+  ClientWidth = 336
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Size.Width = 336.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 331.000000000000000000
+    Viewport.Height = 480.000000000000000000
+    object LayoutMain: TLayout
+      Align = Top
+      Size.Width = 331.000000000000000000
+      Size.Height = 1500.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object BtnRunTest: TButton
+        Align = Top
+        Margins.Top = 20.000000000000000000
+        Position.Y = 252.000000000000000000
+        Size.Width = 331.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Run test'
+        OnClick = BtnRunTestClick
+      end
+      object EditIters: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        KeyboardType = NumberPad
+        Text = '1000'
+        Position.X = 5.000000000000000000
+        Position.Y = 30.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object EditSeedValue: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        KeyboardType = NumberPad
+        Text = '1234'
+        Position.X = 5.000000000000000000
+        Position.Y = 202.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object EditShowIters: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        KeyboardType = NumberPad
+        Text = '10'
+        Position.X = 5.000000000000000000
+        Position.Y = 90.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label2: TLabel
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 65.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Last items to show:'
+        TabOrder = 4
+      end
+      object Label4: TLabel
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 177.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Random seed value:'
+        TabOrder = 5
+      end
+      object MemoLog: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Top
+        Margins.Top = 20.000000000000000000
+        Position.Y = 316.000000000000000000
+        Size.Width = 331.000000000000000000
+        Size.Height = 130.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        OnResize = MemoLogResize
+        Viewport.Width = 323.000000000000000000
+        Viewport.Height = 122.000000000000000000
+      end
+      object Panel1: TPanel
+        Align = Top
+        Margins.Top = 10.000000000000000000
+        Position.Y = 130.000000000000000000
+        Size.Width = 331.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        object SwitchUsePL: TSwitch
+          Align = Right
+          IsChecked = True
+          Margins.Right = 10.000000000000000000
+          Position.X = 266.000000000000000000
+          Position.Y = 1.000000000000000000
+          Size.Width = 55.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object Label3: TLabel
+          Align = Left
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 188.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Use Polish collation:'
+          TabOrder = 3
+        end
+      end
+      object Label1: TLabel
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 321.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Items:'
+        TabOrder = 8
+      end
+    end
+  end
+  object AniIndicator1: TAniIndicator
+    Align = Contents
+    Size.Width = 336.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+end

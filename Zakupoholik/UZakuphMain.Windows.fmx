@@ -1,0 +1,35 @@
+inherited FZakupoholikMain_Windows: TFZakupoholikMain_Windows
+  DesignerMasterStyle = 0
+  inherited ListView1: TListView
+    Touch.InteractiveGestures = [DoubleTap]
+  end
+  inherited LayoutDodaj: TLayout
+    inherited Rectangle1: TRectangle
+      inherited EditCoKupic: TEdit
+        Position.Y = 17.000000000000000000
+      end
+      inherited EditIleKupic: TEdit
+        Position.Y = 65.000000000000000000
+      end
+    end
+    inherited RoundRect2: TRoundRect
+      Align = Top
+      Corners = [TopLeft, TopRight]
+    end
+    inherited Layout1: TLayout
+      Align = Bottom
+      Position.Y = 140.000000000000000000
+      inherited RoundRect1: TRoundRect
+        Align = Bottom
+        Corners = [BottomLeft, BottomRight]
+        Position.Y = 12.000000000000000000
+      end
+      inherited ButtonZrobDodaj: TButton
+        Size.Height = 28.000000000000000000
+      end
+      inherited ButtonAnuluj: TButton
+        Size.Height = 28.000000000000000000
+      end
+    end
+  end
+end

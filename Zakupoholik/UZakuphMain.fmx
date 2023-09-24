@@ -1,0 +1,302 @@
+object FZakupoholikMain: TFZakupoholikMain
+  Left = 0
+  Top = 0
+  Caption = 'Zakupoholik '
+  ClientHeight = 485
+  ClientWidth = 422
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnVirtualKeyboardShown = FormVirtualKeyboardChange
+  OnVirtualKeyboardHidden = FormVirtualKeyboardChange
+  DesignerMasterStyle = 2
+  object ToolBar1: TToolBar
+    Size.Width = 422.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ButtonDodaj: TButton
+      Align = Right
+      Position.X = 378.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'addtoolbutton'
+      TabOrder = 1
+      Text = 'ButtonDodaj'
+      OnClick = ButtonDodajClick
+    end
+    object LabelTitleMain: TLabel
+      Align = Contents
+      Size.Width = 422.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Zakupoholik'
+      TabOrder = 3
+    end
+    object ButtonFiltruj: TButton
+      Align = Left
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'detailstoolbutton'
+      TabOrder = 0
+      Text = 'ButtonDodaj'
+      OnClick = ButtonFiltrujClick
+    end
+  end
+  object ListView1: TListView
+    OnGesture = ListView1Gesture
+    ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+    ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    OnUpdateObjects = ListView1UpdateObjects
+    AllowSelection = False
+    Align = Client
+    Size.Width = 422.000000000000000000
+    Size.Height = 441.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Checkmark
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+    OnItemClickEx = ListView1ItemClickEx
+    OnDeletingItem = ListView1DeletingItem
+    OnDeleteItem = ListView1DeleteItem
+    DeleteButtonText = 'Usu'#324
+    ShowSelection = False
+  end
+  object LayoutDodaj: TLayout
+    Anchors = [akLeft, akRight, akBottom]
+    Margins.Left = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 300.000000000000000000
+    Size.Width = 402.000000000000000000
+    Size.Height = 185.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 11
+    object Rectangle1: TRectangle
+      Align = Contents
+      Fill.Color = xFFF2F2F2
+      Margins.Top = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Size.Width = 402.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object EditCoKupic: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 1
+        KeyboardType = Alphabet
+        Position.X = 16.000000000000000000
+        Position.Y = 42.000000000000000000
+        Size.Width = 370.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Co kupi'#263'?'
+      end
+      object EditIleKupic: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 0
+        KeyboardType = DecimalNumberPad
+        Position.X = 16.000000000000000000
+        Position.Y = 90.000000000000000000
+        Size.Width = 370.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Ile kupi'#263'?'
+      end
+    end
+    object RoundRect2: TRoundRect
+      Align = Bottom
+      Corners = [BottomLeft, BottomRight]
+      Fill.Color = xFFF2F2F2
+      Position.Y = 152.000000000000000000
+      Size.Width = 402.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object Layout1: TLayout
+      Align = Top
+      Size.Width = 402.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object RoundRect1: TRoundRect
+        Align = Top
+        Corners = [TopLeft, TopRight]
+        Fill.Color = xFFF2F2F2
+        Size.Width = 402.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object ButtonZrobDodaj: TButton
+        Anchors = [akTop, akRight]
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 306.000000000000000000
+        Position.Y = 6.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Dodaj'
+        OnClick = ButtonZrobDodajClick
+      end
+      object ButtonAnuluj: TButton
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 6.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Anuluj'
+        OnClick = ButtonAnulujClick
+      end
+    end
+  end
+  object TimerStart: TTimer
+    Interval = 400
+    OnTimer = TimerStartTimer
+    Left = 200
+    Top = 236
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite'
+      
+        'Database=D:\zsdir\zsdane\programs\Delphi11\demaok\Zakupoholik\db' +
+        '\zakupy.sdb')
+    LoginPrompt = False
+    AfterConnect = FDConnection1AfterConnect
+    BeforeConnect = FDConnection1BeforeConnect
+    Left = 32
+    Top = 72
+  end
+  object FDQueryListaZakupow: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      '        SELECT rowid, * FROM listazakupow')
+    Left = 128
+    Top = 8
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'cokupic'
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'ilekupic'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+      OnFilledListItem = LinkListControlToField1FilledListItem
+    end
+  end
+  object FDQueryDodaj: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'INSERT INTO listazakupow VALUES (:co, :ile, 0)')
+    Left = 232
+    Top = 24
+    ParamData = <
+      item
+        Name = 'CO'
+        DataType = ftString
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'ILE'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+  end
+  object FDQueryUsun: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'DELETE FROM listazakupow WHERE rowid = :rid')
+    Left = 296
+    Top = 84
+    ParamData = <
+      item
+        Name = 'RID'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDQueryListaZakupow
+    ScopeMappings = <>
+    Left = 136
+    Top = 152
+  end
+  object FDQueryKupione: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'UPDATE listazakupow SET kupione = :czykup WHERE rowid = :rid')
+    Left = 312
+    Top = 236
+    ParamData = <
+      item
+        Name = 'CZYKUP'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end
+      item
+        Name = 'RID'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    ScreenCursor = gcrHourGlass
+    Left = 152
+    Top = 420
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 272
+    Top = 420
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 32
+    Top = 172
+  end
+  object NotificationCenter1: TNotificationCenter
+    Left = 64
+    Top = 272
+  end
+  object FDQueryIleNieKupionych: TFDQuery
+    Connection = FDConnection1
+    SQL.Strings = (
+      'SELECT COUNT(*) FROM listazakupow WHERE NOT kupione = '#39'1'#39
+      '')
+    Left = 272
+    Top = 156
+  end
+end
